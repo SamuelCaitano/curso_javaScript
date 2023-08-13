@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 19 - Array, Object e Funções</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- This is an example component -->
+  <div class="max-w-lg mx-auto">
+
+    <form id="form" class="mt-12" method="get">
+      <div class="mb-3">
+        <label for="nome" class="text-sm font-medium text-gray-900 block mb-2">Nome</label>
+        <input type="text" id="nome"
+          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="insira o nome">
+      </div>
+      <div class="mb-3">
+        <label for="sobrenome" class="text-sm font-medium text-gray-900 block mb-2">Sobrenome</label>
+        <input type="text" id="sobrenome"
+          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="insira o sobrenome">
+      </div>
+      <div class="mb-3">
+        <label for="idade" class="text-sm font-medium text-gray-900 block mb-2">Idade</label>
+        <input type="text" id="idade"
+          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="insira a idade">
+      </div>
+      <div class="mb-3">
+        <label for="peso" class="text-sm font-medium text-gray-900 block mb-2">Peso</label>
+        <input type="text" id="peso"
+          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="insira o peso">
+      </div>
+      <div class="mb-3">
+        <label for="altura" class="text-sm font-medium text-gray-900 block mb-2">Altura</label>
+        <input type="text" id="altura"
+          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="insira a altura">
+      </div>
+      <button type="submit" aria-label="Botão de envio do formulário"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Enviar</button>
+    </form>
+
+    <div class="flex flex-col">
+      <div class="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
+        <div class="py-2 inline-block min-w-full">
+          <div class="overflow-hidden">
+            <table class="min-w-full">
+              <thead class="bg-white border-b">
+                <tr>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    #
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Nome
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Sobrenome
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Idade
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Peso
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    Altura
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="resultado">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
